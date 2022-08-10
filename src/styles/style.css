@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .container {
+    @apply max-w-[1112px] mx-auto px-4;
+  }
+}
+
+.main-heading {
+  margin: 2rem 0;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 96px;
+  line-height: 110px;
+  background: linear-gradient(
+    89.81deg,
+    #9845e8 -1.72%,
+    #33d2ff 54.05%,
+    #dd5789 99.78%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  background-size: 150% 150%;
+  animation: gradient 5s ease infinite;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}

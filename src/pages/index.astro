@@ -1,14 +1,19 @@
 ---
+import BaseLayout from "../layouts/BaseLayout.astro";
+
+const title = "Uzair Ahmed | Portfolio";
+
+
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<BaseLayout title={title}>
+	<p class="dark:text-light text-dark font-inter mt-[117px]">Hey, I’m</p>
+	<h1 class="font-outfit main-heading">Uzair Ahmed</h1>
+	<p class="dark:text-light text-dark font-inter text-lg font-light">I'm a software engineer based in Toronto, Canada
+		and also a
+		communication and
+		journalism student. I enjoy
+		creating things that live on the internet, whether that be websites, applications, or anything in between. I
+		have been freelancing for a year now while studying at the university and I've manage to gain a decent amount of
+		experience and valuable knowledge from all different kinds of fields throughout my projects/work.</p>
+</BaseLayout>

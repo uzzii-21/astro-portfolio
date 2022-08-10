@@ -1,0 +1,28 @@
+---
+import Header from "../components/Header.astro";
+import Navbar from "../components/Navbar.astro";
+
+export interface Props {
+    title: string;
+}
+
+const { title } = Astro.props as Props;
+
+import '../styles/style.css'
+---
+
+<!DOCTYPE html>
+<html lang="en" data-mode='dark'>
+
+<head>
+    <Header title={title} />
+</head>
+
+<body class="bg-light dark:bg-dark transition-all duration-500;">
+    <Navbar />
+    <main class="container">
+        <slot />
+    </main>
+</body>
+
+</html>
