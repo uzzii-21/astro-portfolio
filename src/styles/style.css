@@ -7,14 +7,16 @@
   .container {
     @apply max-w-[1112px] mx-auto px-4;
   }
+  p,
+  a {
+    @apply font-inter font-light;
+  }
 }
 
 .main-heading {
   margin: 2rem 0;
   font-style: normal;
   font-weight: 600;
-  font-size: 96px;
-  line-height: 110px;
   background: linear-gradient(
     89.81deg,
     #9845e8 -1.72%,
@@ -26,7 +28,8 @@
   background-clip: text;
   text-fill-color: transparent;
   background-size: 150% 150%;
-  animation: gradient 5s ease infinite;
+  animation: gradient 15s ease infinite;
+  width: max-content;
 }
 
 @keyframes gradient {
