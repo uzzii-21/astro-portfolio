@@ -1,0 +1,25 @@
+---
+import { info } from "@data";
+import { createLogo } from "@utils";
+---
+
+<header
+    class="container dark:text-light text-dark flex items-center justify-between h-[123px]"
+>
+    <a class="text-2xl font-semibold font-outfit" href="/"
+        >{createLogo(info.name)}.
+    </a>
+    <nav>
+        <ul class="flex items-center">
+            <li>
+                <a class="p-4 block text-lg" href="blogs">Blogs</a>
+            </li>
+            <li>
+                <a class="p-4 block text-lg" href="resume">Resume</a>
+            </li>
+            <li>
+                <a class="p-4 block text-lg" href="contact">Contact</a>
+            </li>
+        </ul>
+    </nav>
+</header>

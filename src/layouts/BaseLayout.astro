@@ -1,6 +1,6 @@
 ---
-import Header from "../components/Header.astro";
-import Navbar from "../components/Navbar.astro";
+import Header from "@components/general/Header.astro";
+import Navbar from "@components/general/Navbar.astro";
 
 export interface Props {
     title: string;
@@ -8,21 +8,19 @@ export interface Props {
 
 const { title } = Astro.props as Props;
 
-import '../styles/style.css'
+import "../styles/style.css";
 ---
 
 <!DOCTYPE html>
-<html lang="en" data-mode='dark'>
+<html lang="en" data-mode="dark">
+    <head>
+        <Header title={title} />
+    </head>
 
-<head>
-    <Header title={title} />
-</head>
-
-<body class="bg-light dark:bg-dark transition-all duration-500;">
-    <Navbar />
-    <main class="container">
-        <slot />
-    </main>
-</body>
-
+    <body>
+        <Navbar />
+        <main class="container">
+            <slot />
+        </main>
+    </body>
 </html>

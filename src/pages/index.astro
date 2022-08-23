@@ -1,13 +1,10 @@
 ---
-import BaseLayout from "../layouts/BaseLayout.astro";
-import { info } from "../data";
+import BaseLayout from "@layouts/BaseLayout.astro";
+import { info } from "@data";
+import HeroSec from "@components/home/HeroSec.astro";
 const title = "Uzair Ahmed | Portfolio";
 ---
 
 <BaseLayout title={title}>
-	<p class="dark:text-light text-dark mt-[117px]">Hey, I’m</p>
-	<h1 class="font-outfit main-heading text-6xl sm:text-8xl">{info.name}</h1>
-	<p class="dark:text-light text-dark text-lg">
-		{info.about}
-	</p>
+	<HeroSec name={info.name} about={info.about} />
 </BaseLayout>
