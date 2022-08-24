@@ -16,7 +16,16 @@
   .container {
     @apply max-w-[1112px] mx-auto px-4;
   }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-outfit;
+  }
   p,
+  li,
   a {
     @apply font-inter font-light;
   }

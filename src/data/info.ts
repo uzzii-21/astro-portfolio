@@ -8,4 +8,57 @@ export const info = {
   university and I've manage to gain a decent amount of experience and
   valuable knowledge from all different kinds of fields throughout my
   projects/work.`,
+
+  experience: [
+    {
+      companyName: "Microsoft Corporation",
+      location: " Selfbook / US - New York",
+      startDate: "Jul 2021",
+      endDate: "Aug 2021",
+      jobResponsibilities: [
+        "- Developing screens and UI components for the web application using React and Tailwind.",
+        "- Fixing UI issues and integrating backend APIs with Redux Saga.",
+      ],
+    },
+    {
+      companyName: "Microsoft Corporation",
+      location: " Selfbook / US - New York",
+      startDate: "Jul 2021",
+      endDate: "Aug 2021",
+      jobResponsibilities: [
+        "- Developing screens and UI components for the web application using React and Tailwind.",
+        "- Fixing UI issues and integrating backend APIs with Redux Saga.",
+      ],
+    },
+    {
+      companyName: "Microsoft Corporation",
+      location: " Selfbook / US - New York",
+      startDate: "Jul 2021",
+      endDate: "Aug 2021",
+      jobResponsibilities: [
+        "- Developing screens and UI components for the web application using React and Tailwind.",
+        "- Fixing UI issues and integrating backend APIs with Redux Saga.",
+      ],
+    },
+    {
+      companyName: "Microsoft Corporation",
+      location: " Selfbook / US - New York",
+      startDate: "Jul 2021",
+      endDate: "Aug 2021",
+      jobResponsibilities: [
+        "- Developing screens and UI components for the web application using React and Tailwind.",
+        "- Fixing UI issues and integrating backend APIs with Redux Saga.",
+      ],
+    },
+    {
+      companyName: "Microsoft Corporation",
+      location: " Selfbook / US - New York",
+      startDate: "Jul 2021",
+      endDate: "Aug 2021",
+      jobResponsibilities: [
+        "- Developing screens and UI components for the web application using React and Tailwind.",
+        "- Fixing UI issues and integrating backend APIs with Redux Saga.",
+      ],
+    },
+  ],
 };
