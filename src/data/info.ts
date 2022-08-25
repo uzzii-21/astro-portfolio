@@ -11,54 +11,85 @@ export const info = {
 
   experience: [
     {
-      companyName: "Microsoft Corporation",
+      name: "Microsoft Corporation",
       location: " Selfbook / US - New York",
       startDate: "Jul 2021",
       endDate: "Aug 2021",
-      jobResponsibilities: [
+      description: [
         "- Developing screens and UI components for the web application using React and Tailwind.",
         "- Fixing UI issues and integrating backend APIs with Redux Saga.",
       ],
     },
     {
-      companyName: "Microsoft Corporation",
+      name: "Microsoft Corporation",
       location: " Selfbook / US - New York",
       startDate: "Jul 2021",
       endDate: "Aug 2021",
-      jobResponsibilities: [
+      description: [
         "- Developing screens and UI components for the web application using React and Tailwind.",
         "- Fixing UI issues and integrating backend APIs with Redux Saga.",
       ],
     },
     {
-      companyName: "Microsoft Corporation",
+      name: "Microsoft Corporation",
       location: " Selfbook / US - New York",
       startDate: "Jul 2021",
       endDate: "Aug 2021",
-      jobResponsibilities: [
+      description: [
         "- Developing screens and UI components for the web application using React and Tailwind.",
         "- Fixing UI issues and integrating backend APIs with Redux Saga.",
       ],
     },
     {
-      companyName: "Microsoft Corporation",
+      name: "Microsoft Corporation",
       location: " Selfbook / US - New York",
       startDate: "Jul 2021",
       endDate: "Aug 2021",
-      jobResponsibilities: [
+      description: [
         "- Developing screens and UI components for the web application using React and Tailwind.",
         "- Fixing UI issues and integrating backend APIs with Redux Saga.",
       ],
     },
     {
-      companyName: "Microsoft Corporation",
+      name: "Microsoft Corporation",
       location: " Selfbook / US - New York",
       startDate: "Jul 2021",
       endDate: "Aug 2021",
-      jobResponsibilities: [
+      description: [
         "- Developing screens and UI components for the web application using React and Tailwind.",
         "- Fixing UI issues and integrating backend APIs with Redux Saga.",
       ],
+    },
+  ],
+
+  education: [
+    {
+      name: "University of Toronto",
+      location: "Canada",
+      startDate: "2018",
+      endDate: "2021",
+      description: ["- Bachelor's degree in communication"],
+    },
+    {
+      name: "University of Toronto",
+      location: "Canada",
+      startDate: "2018",
+      endDate: "2021",
+      description: ["- Bachelor's degree in communication"],
+    },
+    {
+      name: "University of Toronto",
+      location: "Canada",
+      startDate: "2018",
+      endDate: "2021",
+      description: ["- Bachelor's degree in communication"],
+    },
+    {
+      name: "University of Toronto",
+      location: "Canada",
+      startDate: "2018",
+      endDate: "2021",
+      description: ["- Bachelor's degree in communication"],
     },
   ],
 };

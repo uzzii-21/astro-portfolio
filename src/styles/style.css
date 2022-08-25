@@ -27,6 +27,6 @@
   p,
   li,
   a {
-    @apply font-inter font-light;
+    @apply font-inter dark:font-light transition-all;
   }
 }
