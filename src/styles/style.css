@@ -29,4 +29,7 @@
   a {
     @apply font-inter dark:font-light text-dark-gray transition-all;
   }
+  .footer-icons {
+    @apply dark:text-white flex items-center font-inter border border-dark dark:border-white p-4 w-full rounded justify-center;
+  }
 }
