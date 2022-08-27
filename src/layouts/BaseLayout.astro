@@ -1,4 +1,5 @@
 ---
+import Footer from "@components/general/Footer.astro";
 import Header from "@components/general/Header.astro";
 import Navbar from "@components/general/Navbar.astro";
 
@@ -22,5 +23,7 @@ import "../styles/style.css";
         <main class="container">
             <slot />
         </main>
+
+        <Footer />
     </body>
 </html>
