@@ -1,13 +1,13 @@
 ---
 import BaseLayout from "@layouts/BaseLayout.astro";
 import { info } from "@data";
-import HeroSec from "@components/home/HeroSec.astro";
+import Hero from "@components/home/Hero.astro";
 import Experience from "@components/home/Experience.astro";
 const title = "Uzair Ahmed | Portfolio";
 ---
 
 <BaseLayout title={title}>
-	<HeroSec name={info.name} about={info.about} />
+	<Hero name={info.name} about={info.about} />
 	<Experience title={"EXPERIENCE"} details={info.experience} />
 	<Experience title={"EDUCATION"} details={info.education} />
 </BaseLayout>

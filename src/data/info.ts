@@ -92,4 +92,11 @@ export const info = {
       description: ["- Bachelor's degree in communication"],
     },
   ],
+  socialMedia: {
+    facebook: "",
+    twitter: "",
+    github: "",
+    email: "",
+    linkedin: "",
+  },
 };
