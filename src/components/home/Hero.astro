@@ -1,9 +1,9 @@
 ---
-export interface Props {
+interface IProps {
     name: string;
     about: string;
 }
-const { name, about } = Astro.props as Props;
+const { name, about } = Astro.props as IProps;
 ---
 
 <p class="dark:text-light mt-[117px]">Hey, I’m</p>

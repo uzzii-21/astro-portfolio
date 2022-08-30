@@ -1,13 +1,17 @@
 ---
-// export interface Props {
-//     companyName: string;
-//     location: string;
-//     startDate: string;
-//     endDate: string;
-//     jobResponsibilities: string[];
-// }
+interface IExperience {
+    name: string;
+    location: string;
+    startDate: string;
+    endDate: string;
+    description: string[];
+}
+interface IProps {
+    title: string;
+    details: IExperience[];
+}
 
-const { title, details } = Astro.props;
+const { title, details } = Astro.props as IProps;
 ---
 
 <section
