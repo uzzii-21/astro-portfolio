@@ -11,13 +11,13 @@ const { title, details } = Astro.props;
 ---
 
 <section
-    class="flex items-start justify-between flex-col sm:flex-row dark:text-light mt-32"
+    class="flex items-start justify-between flex-col sm:flex-row dark:text-light"
 >
-    <h2 class="w-[15rem] text-xl font-semibold mb-12 sm:mb-0">{title}</h2>
+    <h2 class="w-[15rem] text-xl font-semibold mt-16">{title}</h2>
     <div class="w-full">
         {
             details.map((item) => (
-                <div class="mb-16">
+                <div class="my-16">
                     <div class="flex justify-between items-center flex-wrap">
                         <h3 class="text-xl font-semibold">{item.name}</h3>
                         <p class="text-sm dark:text-gray">
