@@ -6,8 +6,10 @@ interface IProps {
 const { name, about } = Astro.props as IProps;
 ---
 
-<p class="dark:text-light mt-[117px]">Hey, I’m</p>
-<h1 class="main-heading text-6xl sm:text-8xl">{name}</h1>
-<p class="dark:text-light text-lg mb-16">
-    {about}
-</p>
+<section>
+    <p class="dark:text-light mt-[117px]">Hey, I’m</p>
+    <h1 class="main-heading text-6xl sm:text-8xl">{name}</h1>
+    <p class="dark:text-light text-lg mb-16">
+        {about}
+    </p>
+</section>
