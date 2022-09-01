@@ -7,19 +7,29 @@ import image from "../../assets/images/screencapture-localhost-3000-2022-08-31-0
         FEATURE PROJECTS
     </h2>
     <div class="grid md:grid-cols-2 grid-cols-1 gap-4 my-16">
-        <div class="w-full max-h-[25rem] overflow-hidden">
+        <div class="w-full max-h-[25rem] overflow-hidden relative">
             <img
                 src={image}
                 class="w-full h-auto translate-y-0 hover:-translate-y-[calc(100%-25rem)] transition duration-[1.5s]"
                 alt=""
             />
+            <div
+                class="absolute w-full bottom-0 left-0 backdrop-blur-md dark:text-white"
+            >
+                <h3>Project 1</h3>
+            </div>
         </div>
-        <div class="w-full max-h-[25rem] overflow-hidden">
+        <div class="w-full max-h-[25rem] overflow-hidden relative">
             <img
                 src={image}
                 class="w-full h-auto translate-y-0 hover:-translate-y-[calc(100%-25rem)] transition duration-[1.5s]"
                 alt=""
             />
+            <div
+                class="absolute w-full bottom-0 left-0 backdrop-blur-md dark:text-white"
+            >
+                <h3>Project 1</h3>
+            </div>
         </div>
     </div>
 </section>
