@@ -1,15 +1,18 @@
 ---
-import BaseLayout from "@layouts/BaseLayout.astro";
+import Layout from "@layouts/Layout.astro";
 import { info } from "@data";
 import Hero from "@components/home/Hero.astro";
 import Experience from "@components/home/Experience.astro";
 import FeatureProjects from "@components/home/FeatureProjects.astro";
+
 const title = "Uzair Ahmed | Portfolio";
+const featureProjects = await Astro.glob("./projects/[projects].astro");
+console.log(featureProjects);
 ---
 
-<BaseLayout title={title}>
-	<Hero name={info.name} about={info.about} />
-	<Experience title={"EXPERIENCE"} details={info.experience} />
-	<Experience title={"EDUCATION"} details={info.education} />
-	<FeatureProjects />
-</BaseLayout>
+<Layout title={title}>
+  <Hero name={info.name} about={info.about} />
+  <Experience title={"EXPERIENCE"} details={info.experience} />
+  <Experience title={"EDUCATION"} details={info.education} />
+  <FeatureProjects />
+</Layout>
