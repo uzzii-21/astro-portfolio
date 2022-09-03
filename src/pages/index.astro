@@ -6,8 +6,9 @@ import Experience from "@components/home/Experience.astro";
 import FeatureProjects from "@components/home/FeatureProjects.astro";
 
 const title = "Uzair Ahmed | Portfolio";
-const featureProjects = await Astro.glob("./projects/[projects].astro");
-console.log(featureProjects);
+const featureProjects = await Astro.glob("./projects/*.md");
+const data = featureProjects.map((feature) => feature.frontmatter);
+console.log(data);
 ---
 
 <Layout title={title}>

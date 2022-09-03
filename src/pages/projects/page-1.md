@@ -1,5 +1,11 @@
 ---
-title: Hello, World
+title: Hello World
+slug: hello-world
+postType: blog
+isFeatured: true
+author: Uzair Ahemd
+publishDate: 2014-10-10
+updated: 2014-10-10
 ---
 
 # Hi there!
