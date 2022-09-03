@@ -2,28 +2,25 @@
 import Footer from "@components/general/Footer.astro";
 import Header from "@components/general/Header.astro";
 import Navbar from "@components/general/Navbar.astro";
+import { IPageTitle } from "@types";
 
-export interface Props {
-    title: string;
-}
-
-const { title } = Astro.props as Props;
+const { title } = Astro.props as IPageTitle;
 
 import "../styles/style.css";
 ---
 
 <!DOCTYPE html>
 <html lang="en" data-theme="dark">
-    <head>
-        <Header title={title} />
-    </head>
+  <head>
+    <Header title={title} />
+  </head>
 
-    <body>
-        <Navbar />
-        <main class="container">
-            <slot />
-        </main>
+  <body>
+    <Navbar />
+    <main class="container">
+      <slot />
+    </main>
 
-        <Footer />
-    </body>
+    <Footer />
+  </body>
 </html>

@@ -1,5 +1,13 @@
 ---
 import ProjectCard from "./ProjectCard.astro";
+
+const projects = await Astro.glob("../../pages/projects/*.md");
+
+const featureProjects = projects.map((feature, index) => {
+  if (feature.frontmatter.isFeatured && index < 6) {
+    return feature.frontmatter;
+  }
+});
 ---
 
 <section>
@@ -7,11 +15,6 @@ import ProjectCard from "./ProjectCard.astro";
     FEATURE PROJECTS
   </h2>
   <div class="grid md:grid-cols-2 grid-cols-1 gap-4 my-16">
-    <ProjectCard />
-    <ProjectCard />
-    <ProjectCard />
-    <ProjectCard />
-    <ProjectCard />
-    <ProjectCard />
+    {featureProjects.map((project) => <ProjectCard projectDetail={project} />)}
   </div>
 </section>
