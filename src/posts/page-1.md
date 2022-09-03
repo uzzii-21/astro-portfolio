@@ -1,8 +1,12 @@
 ---
 title: Hello World
-slug: hello-world
+slug: page-1
 postType: blog
+featureImage: "https://cdn.dribbble.com/userupload/3402489/file/original-18e49b3056d6c0fc67614e98f5fa9f11.jpg?compress=1&resize=1200x900"
 isFeatured: true
+effect: scroll
+liveUrl: ""
+githubUrl: ""
 author: Uzair Ahemd
 publishDate: 2014-10-10
 updated: 2014-10-10

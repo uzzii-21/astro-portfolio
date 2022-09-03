@@ -1,7 +1,7 @@
 ---
 import ProjectCard from "./ProjectCard.astro";
 
-const projects = await Astro.glob("../../pages/projects/*.md");
+const projects = await Astro.glob("../../posts/*.md");
 
 const featureProjects = projects.map((feature, index) => {
   if (feature.frontmatter.isFeatured && index < 6) {
