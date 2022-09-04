@@ -1,11 +1,11 @@
 ---
-import Layout from "@layouts/Layout.astro";
 import { info } from "@data";
+
+import Layout from "@layouts/Layout.astro";
 import Hero from "@components/home/Hero.astro";
 import Experience from "@components/home/Experience.astro";
 import FeatureProjects from "@components/general/FeatureProjects.astro";
-
-const title = "Uzair Ahmed | Portfolio";
+import MetaHead from "@components/general/MetaHead.astro";
 
 const projects = await Astro.glob("../posts/*.{md, mdx}");
 
@@ -16,13 +16,41 @@ const featureProjects = projects.map((feature, index) => {
 });
 ---
 
-<Layout title={title}>
-  <Hero name={info.name} about={info.about} />
-  <Experience title={"EXPERIENCE"} details={info.experience} />
-  <Experience title={"EDUCATION"} details={info.education} />
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <MetaHead>
+      <!-- Primary Meta Tags -->
+      <title>{`Portfolio - ${info.name}`}</title>
+      <meta name="title" content={`Portfolio - ${info.name}`} />
+      <meta name="description" content={info.about} />
+      <link rel="canonical" href={Astro.url.href} />
 
-  <section>
-    <h2 class="w-[15rem] dark:text-light mt-16">FEATURE PROJECTS</h2>
-    <FeatureProjects projects={featureProjects} />
-  </section>
-</Layout>
+      <!-- Open Graph / Facebook -->
+      <meta property="og:type" content="website" />
+      <meta property="og:url" content={Astro.url.href} />
+      <meta property="og:title" content={`Portfolio - ${info.name}`} />
+      <meta property="og:description" content={info.about} />
+      <meta property="og:image" content="/profile.png" />
+
+      <!-- Twitter -->
+      <meta property="twitter:card" content="summary_large_image" />
+      <meta property="twitter:url" content={Astro.url.href} />
+      <meta property="twitter:title" content={`Portfolio - ${info.name}`} />
+      <meta property="twitter:description" content={info.about} />
+      <meta property="twitter:image" content="/profile.png" />
+    </MetaHead>
+  </head>
+
+  <body>
+    <Layout>
+      <Hero name={info.name} about={info.about} />
+      <Experience title={"EXPERIENCE"} details={info.experience} />
+      <Experience title={"EDUCATION"} details={info.education} />
+      <section>
+        <h2 class="w-[15rem] dark:text-light mt-16">FEATURE PROJECTS</h2>
+        <FeatureProjects projects={featureProjects} />
+      </section>
+    </Layout>
+  </body>
+</html>

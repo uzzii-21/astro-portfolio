@@ -1,5 +1,8 @@
 ---
+import { info } from "@data";
+
 import FeatureProjects from "@components/general/FeatureProjects.astro";
+import MetaHead from "@components/general/MetaHead.astro";
 import Layout from "@layouts/Layout.astro";
 
 const projects = await Astro.glob("../../posts/*.{md, mdx}");
@@ -9,7 +12,45 @@ const featureProjects = projects.map(
 );
 ---
 
-<Layout>
-  <h1 style="line-height: 1.2;">Projects</h1>
-  <FeatureProjects projects={featureProjects} />
-</Layout>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <MetaHead>
+      <!-- Primary Meta Tags -->
+      <title>{`Projects - ${info.name}`}</title>
+      <meta name="title" content={`Projects - ${info.name}`} />
+      <meta
+        name="description"
+        content="All projects are available in this page."
+      />
+      <link rel="canonical" href={Astro.url.href} />
+
+      <!-- Open Graph / Facebook -->
+      <meta property="og:type" content="website" />
+      <meta property="og:url" content={Astro.url.href} />
+      <meta property="og:title" content={`Projects - ${info.name}`} />
+      <meta
+        property="og:description"
+        content="All projects are available in this page."
+      />
+      <meta property="og:image" content="/profile.png" />
+
+      <!-- Twitter -->
+      <meta property="twitter:card" content="summary_large_image" />
+      <meta property="twitter:url" content={Astro.url.href} />
+      <meta property="twitter:title" content={`Projects - ${info.name}`} />
+      <meta
+        property="twitter:description"
+        content="All projects are available in this page."
+      />
+      <meta property="twitter:image" content="/profile.png" />
+    </MetaHead>
+  </head>
+
+  <body>
+    <Layout>
+      <h1 style="line-height: 1.2;">Projects</h1>
+      <FeatureProjects projects={featureProjects} />
+    </Layout>
+  </body>
+</html>
