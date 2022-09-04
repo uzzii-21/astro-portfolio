@@ -14,15 +14,63 @@ import { createLogo } from "@utils";
   <nav>
     <ul class="flex items-center">
       <li>
-        <a class="p-4 dark:text-light block text-lg" href="projects">Projects</a
+        <a class="p-4 dark:text-light block text-lg" href="/projects"
+          >Projects</a
         >
       </li>
+      <!-- <li>
+        <a class="p-4 dark:text-light block text-lg" href="/contact">Contact</a>
+      </li> -->
       <li>
-        <a class="p-4 dark:text-light block text-lg" href="resume">Resume</a>
-      </li>
-      <li>
-        <a class="p-4 dark:text-light block text-lg" href="contact">Contact</a>
+        <button
+          aria-label="theme-button"
+          id="theme-button"
+          class="dark:text-light rounded-lg p-4 ml-2 bg-slate-100 dark:bg-[#202020]"
+        ></button>
       </li>
     </ul>
   </nav>
 </header>
+
+<script is:inline>
+  const moon = `<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-moon"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>`;
+  const sun = `<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-sun"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>`;
+  const themeButton = document.getElementById("theme-button");
+  let isDark;
+  const theme = (() => {
+    if (typeof localStorage !== "undefined" && localStorage.getItem("theme")) {
+      return localStorage.getItem("theme");
+    }
+    if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
+      return "dark";
+    }
+    return "light";
+  })();
+
+  if (theme === "light") {
+    document.documentElement.setAttribute("data-theme", "light");
+    isDark = true;
+    themeButton.innerHTML = moon;
+  } else {
+    document.documentElement.setAttribute("data-theme", "dark");
+    isDark = false;
+    themeButton.innerHTML = sun;
+  }
+  window.localStorage.setItem("theme", theme);
+
+  const darkModeHandler = () => {
+    if (isDark) {
+      document.documentElement.setAttribute("data-theme", "dark");
+      localStorage.theme = "dark";
+      isDark = false;
+      themeButton.innerHTML = sun;
+    } else {
+      document.documentElement.setAttribute("data-theme", "light");
+      localStorage.theme = "light";
+      isDark = true;
+      themeButton.innerHTML = moon;
+    }
+  };
+
+  themeButton.addEventListener("click", darkModeHandler);
+</script>

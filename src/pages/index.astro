@@ -3,14 +3,28 @@ import Layout from "@layouts/Layout.astro";
 import { info } from "@data";
 import Hero from "@components/home/Hero.astro";
 import Experience from "@components/home/Experience.astro";
-import FeatureProjects from "@components/home/FeatureProjects.astro";
+import FeatureProjects from "@components/general/FeatureProjects.astro";
 
 const title = "Uzair Ahmed | Portfolio";
+
+const projects = await Astro.glob("../posts/*.{md, mdx}");
+
+const featureProjects = projects.map((feature, index) => {
+  if (feature.frontmatter.isFeatured && index < 6) {
+    return feature.frontmatter;
+  }
+});
 ---
 
 <Layout title={title}>
   <Hero name={info.name} about={info.about} />
   <Experience title={"EXPERIENCE"} details={info.experience} />
   <Experience title={"EDUCATION"} details={info.education} />
-  <FeatureProjects />
+
+  <section>
+    <h2 class="w-[15rem] text-xl font-semibold dark:text-light mt-16">
+      FEATURE PROJECTS
+    </h2>
+    <FeatureProjects projects={featureProjects} />
+  </section>
 </Layout>

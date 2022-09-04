@@ -2,7 +2,7 @@
 title: Hello World
 slug: page-1
 postType: blog
-featureImage: "https://cdn.dribbble.com/userupload/3402489/file/original-18e49b3056d6c0fc67614e98f5fa9f11.jpg?compress=1&resize=1200x900"
+featureImage: "/images/screencapture-localhost-3000-2022-08-31-08_02_56.png"
 isFeatured: true
 effect: scroll
 liveUrl: ""
@@ -11,6 +11,8 @@ author: Uzair Ahemd
 publishDate: 2014-10-10
 updated: 2014-10-10
 ---
+
+![Feature Image](/images/screencapture-localhost-3000-2022-08-31-08_02_56.png)
 
 # Hi there!
 

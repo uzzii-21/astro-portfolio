@@ -17,5 +17,7 @@ const { Content, frontmatter } = Astro.props.post;
 ---
 
 <Layout title={frontmatter.title}>
-  <Content />
+  <article class="my-16">
+    <Content />
+  </article>
 </Layout>
