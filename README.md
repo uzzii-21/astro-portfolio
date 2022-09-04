@@ -4,7 +4,7 @@ Just change `src/data/info.ts` to get your personal portfolio.
 
 ## portfolio template for Developers!
 
-![Feature Image](./public/images/design.png)
+![Feature Image](./public/assets/images/design.png)
 
 ## 🚀 Project Structure
 

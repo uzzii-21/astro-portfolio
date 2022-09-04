@@ -31,14 +31,17 @@ const featureProjects = projects.map((feature, index) => {
       <meta property="og:url" content={Astro.url.href} />
       <meta property="og:title" content={`Portfolio - ${info.name}`} />
       <meta property="og:description" content={info.about} />
-      <meta property="og:image" content="/profile.png" />
+      <meta property="og:image" content={`${Astro.url.origin}/profile.png`} />
 
       <!-- Twitter -->
       <meta property="twitter:card" content="summary_large_image" />
       <meta property="twitter:url" content={Astro.url.href} />
       <meta property="twitter:title" content={`Portfolio - ${info.name}`} />
       <meta property="twitter:description" content={info.about} />
-      <meta property="twitter:image" content="/profile.png" />
+      <meta
+        property="twitter:image"
+        content={`${Astro.url.origin}/profile.png`}
+      />
     </MetaHead>
   </head>
 

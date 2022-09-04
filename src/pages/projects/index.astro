@@ -33,7 +33,7 @@ const featureProjects = projects.map(
         property="og:description"
         content="All projects are available in this page."
       />
-      <meta property="og:image" content="/profile.png" />
+      <meta property="og:image" content={`${Astro.url.origin}/profile.png`} />
 
       <!-- Twitter -->
       <meta property="twitter:card" content="summary_large_image" />
@@ -43,7 +43,10 @@ const featureProjects = projects.map(
         property="twitter:description"
         content="All projects are available in this page."
       />
-      <meta property="twitter:image" content="/profile.png" />
+      <meta
+        property="twitter:image"
+        content={`${Astro.url.origin}/profile.png`}
+      />
     </MetaHead>
   </head>
 

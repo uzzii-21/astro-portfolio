@@ -2,7 +2,7 @@
 title: Portfolio Website
 slug: portfolio-website
 postType: project
-featureImage: /images/design.png
+featureImage: /assets/images/design.png
 isFeatured: true
 # liveUrl: https://astro-portfolio-uzair.vercel.app/
 # githubUrl: https://github.com/uzzii-21/astro-portfolio
