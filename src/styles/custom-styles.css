@@ -17,6 +17,11 @@
   animation: gradient 15s ease infinite;
   line-height: 1.2;
 }
+.pre {
+  padding: 2rem;
+  border-radius: 0.5rem;
+  margin-bottom: 2rem !important;
+}
 
 @keyframes gradient {
   0% {

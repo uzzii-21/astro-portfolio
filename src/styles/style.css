@@ -24,21 +24,62 @@
   h6 {
     @apply font-outfit;
   }
-  article h1,
+  .article h1,
   h1 {
     @apply text-6xl sm:text-8xl main-heading;
   }
+  .article h2,
+  h2 {
+    @apply text-xl font-semibold;
+  }
+
   p,
   li,
   a {
     @apply font-inter text-dark-gray;
   }
-  article p,
-  article li,
-  article a {
-    @apply dark:text-light text-lg;
-  }
   .footer-icons {
     @apply dark:text-light flex items-center border border-dark dark:border-light p-4 rounded-lg justify-center;
+  }
+
+  /* post page */
+  .article img {
+    @apply mb-4;
+  }
+  .article code {
+    @apply bg-slate-100 dark:bg-[#202020] py-1 px-2 rounded m-1;
+  }
+  .article > pre {
+    @apply pre;
+  }
+  .article > pre > code {
+    @apply bg-transparent dark:bg-transparent;
+  }
+
+  th,
+  td {
+    @apply border border-gray p-2;
+  }
+  .article h2,
+  .article h3,
+  .article h4,
+  .article h5,
+  .article h6,
+  .article table,
+  .article p,
+  .article li,
+  .article a {
+    @apply dark:text-light;
+  }
+  .article p,
+  .article li,
+  .article a {
+    @apply text-lg;
+  }
+  .article table {
+    @apply my-8;
+  }
+  .article p {
+    @apply my-3;
   }
 }

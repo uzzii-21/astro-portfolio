@@ -1,25 +1,18 @@
 ---
 import { IProjectDetails } from "@types";
 const { projectDetail } = Astro.props as IProjectDetails;
-const {
-  title,
-  slug,
-  postType,
-  featureImage = "/images/screencapture-localhost-3000-2022-08-31-08_02_56.png",
-  effect,
-  liveUrl,
-  githubUrl,
-} = projectDetail;
+const { title, slug, postType, featureImage, liveUrl, githubUrl } =
+  projectDetail;
 ---
 
-<a href={`projects/${slug}`} aria-label="Article">
+<a href={`projects/${slug}`} class="cursor-pointer" aria-label={title}>
   <article class="w-full max-h-[25rem] overflow-hidden relative group">
     <div class="flex items-center absolute right-4 top-4 z-10">
       {
         githubUrl && (
           <a
             href={githubUrl}
-            class="text-white p-3 bg-black/50 rounded-full backdrop-blur-md"
+            class="text-white p-3 bg-black/50 rounded-full backdrop-blur-md pointer-events-none"
             aria-label="Social Media"
             target="_blank"
           >
@@ -45,7 +38,7 @@ const {
         liveUrl && (
           <a
             href={liveUrl}
-            class="text-white p-3 bg-black/50 rounded-full backdrop-blur-md ml-1"
+            class="text-white p-3 bg-black/50 rounded-full backdrop-blur-md pointer-events-none ml-1"
             aria-label="Social Media"
             target="_blank"
           >
@@ -70,7 +63,7 @@ const {
     </div>
     <img
       src={featureImage}
-      class="w-full h-auto translate-y-0 hover:-translate-y-[calc(100%-25rem)] transition duration-[1.5s]"
+      class="w-full h-auto scale-100 hover:scale-110 transition duration-[1.5s]"
       loading="lazy"
       width="100%"
       height="100%"

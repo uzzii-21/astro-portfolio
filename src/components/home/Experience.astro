@@ -7,7 +7,7 @@ const { title, details } = Astro.props as IExperiences;
 <section
   class="flex items-start justify-between flex-col sm:flex-row dark:text-light"
 >
-  <h2 class="w-[15rem] text-xl font-semibold mt-16">{title}</h2>
+  <h2 class="w-[15rem] mt-16">{title}</h2>
   <div class="w-full">
     {
       details.map((item) => (
