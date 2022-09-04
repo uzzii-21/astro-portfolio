@@ -31,7 +31,7 @@
   p,
   li,
   a {
-    @apply font-inter dark:font-light text-dark-gray transition-all;
+    @apply font-inter text-dark-gray;
   }
   article p,
   article li,
