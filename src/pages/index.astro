@@ -19,39 +19,11 @@ const featureProjects = projects.map((feature, index) => {
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <MetaHead>
-      <!-- Primary Meta Tags -->
-      <title>{`Portfolio - ${info.name}`}</title>
-      <meta name="title" content={`Portfolio - ${info.name}`} />
-      <meta name="description" content={info.about} />
-      <link rel="canonical" href={`${info.baseUrl}${Astro.url.pathname}`} />
-
-      <!-- Open Graph / Facebook -->
-      <meta property="og:type" content="website" />
-      <meta
-        property="og:url"
-        content={`${info.baseUrl}${Astro.url.pathname}`}
-      />
-      <meta property="og:title" content={`Portfolio - ${info.name}`} />
-      <meta property="og:description" content={info.about} />
-      <meta
-        property="og:image"
-        content={`${info.baseUrl}/assets/images/profile.png`}
-      />
-
-      <!-- Twitter -->
-      <meta property="twitter:card" content="summary_large_image" />
-      <meta
-        property="twitter:url"
-        content={`${info.baseUrl}${Astro.url.pathname}`}
-      />
-      <meta property="twitter:title" content={`Portfolio - ${info.name}`} />
-      <meta property="twitter:description" content={info.about} />
-      <meta
-        property="twitter:image"
-        content={`${info.baseUrl}/assets/images/profile.png`}
-      />
-    </MetaHead>
+    <MetaHead
+      title={"Portfolio"}
+      description={info.about}
+      ogImageUrl={"/assets/images/profile.png"}
+    />
   </head>
 
   <body>

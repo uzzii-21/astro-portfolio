@@ -1,6 +1,4 @@
 ---
-import { info } from "@data";
-
 import FeatureProjects from "@components/general/FeatureProjects.astro";
 import MetaHead from "@components/general/MetaHead.astro";
 import Layout from "@layouts/Layout.astro";
@@ -15,40 +13,10 @@ const featureProjects = projects.map(
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <MetaHead>
-      <!-- Primary Meta Tags -->
-      <title>{`Projects - ${info.name}`}</title>
-      <meta name="title" content={`Projects - ${info.name}`} />
-      <meta
-        name="description"
-        content="All projects are available in this page."
-      />
-      <link rel="canonical" href={`${info.baseUrl}${Astro.url.pathname}`} />
-
-      <!-- Open Graph / Facebook -->
-      <meta property="og:type" content="website" />
-      <meta
-        property="og:url"
-        content={`${info.baseUrl}${Astro.url.pathname}`}
-      />
-      <meta property="og:title" content={`Projects - ${info.name}`} />
-      <meta
-        property="og:description"
-        content="All projects are available in this page."
-      />
-
-      <!-- Twitter -->
-      <meta property="twitter:card" content="summary_large_image" />
-      <meta
-        property="twitter:url"
-        content={`${info.baseUrl}${Astro.url.pathname}`}
-      />
-      <meta property="twitter:title" content={`Projects - ${info.name}`} />
-      <meta
-        property="twitter:description"
-        content="All projects are available in this page."
-      />
-    </MetaHead>
+    <MetaHead
+      title={"Projects"}
+      description={"All projects are available in this page."}
+    />
   </head>
 
   <body>

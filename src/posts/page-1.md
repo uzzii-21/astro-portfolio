@@ -13,7 +13,7 @@ updated: 2022-04-09
 
 # Portfolio Website - Astro
 
-![Feature Image](/images/design.png)
+![Feature Image](/assets/images/design.png)
 
 Just change `src/data/info.ts` to get your personal portfolio.
 

@@ -1,5 +1,7 @@
-export interface IPageTitle {
+export interface IMetaHead {
   title: string;
+  description: string;
+  ogImageUrl: string;
 }
 
 export interface IHeroProps {
