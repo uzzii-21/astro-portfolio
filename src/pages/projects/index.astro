@@ -23,29 +23,30 @@ const featureProjects = projects.map(
         name="description"
         content="All projects are available in this page."
       />
-      <link rel="canonical" href={Astro.url.href} />
+      <link rel="canonical" href={`${info.baseUrl}${Astro.url.pathname}`} />
 
       <!-- Open Graph / Facebook -->
       <meta property="og:type" content="website" />
-      <meta property="og:url" content={Astro.url.href} />
+      <meta
+        property="og:url"
+        content={`${info.baseUrl}${Astro.url.pathname}`}
+      />
       <meta property="og:title" content={`Projects - ${info.name}`} />
       <meta
         property="og:description"
         content="All projects are available in this page."
       />
-      <meta property="og:image" content={`${Astro.url.origin}/profile.png`} />
 
       <!-- Twitter -->
       <meta property="twitter:card" content="summary_large_image" />
-      <meta property="twitter:url" content={Astro.url.href} />
+      <meta
+        property="twitter:url"
+        content={`${info.baseUrl}${Astro.url.pathname}`}
+      />
       <meta property="twitter:title" content={`Projects - ${info.name}`} />
       <meta
         property="twitter:description"
         content="All projects are available in this page."
-      />
-      <meta
-        property="twitter:image"
-        content={`${Astro.url.origin}/profile.png`}
       />
     </MetaHead>
   </head>

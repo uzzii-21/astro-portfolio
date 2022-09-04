@@ -24,23 +24,32 @@ const featureProjects = projects.map((feature, index) => {
       <title>{`Portfolio - ${info.name}`}</title>
       <meta name="title" content={`Portfolio - ${info.name}`} />
       <meta name="description" content={info.about} />
-      <link rel="canonical" href={Astro.url.href} />
+      <link rel="canonical" href={`${info.baseUrl}${Astro.url.pathname}`} />
 
       <!-- Open Graph / Facebook -->
       <meta property="og:type" content="website" />
-      <meta property="og:url" content={Astro.url.href} />
+      <meta
+        property="og:url"
+        content={`${info.baseUrl}${Astro.url.pathname}`}
+      />
       <meta property="og:title" content={`Portfolio - ${info.name}`} />
       <meta property="og:description" content={info.about} />
-      <meta property="og:image" content={`${Astro.url.origin}/profile.png`} />
+      <meta
+        property="og:image"
+        content={`${info.baseUrl}/assets/profile.png`}
+      />
 
       <!-- Twitter -->
       <meta property="twitter:card" content="summary_large_image" />
-      <meta property="twitter:url" content={Astro.url.href} />
+      <meta
+        property="twitter:url"
+        content={`${info.baseUrl}${Astro.url.pathname}`}
+      />
       <meta property="twitter:title" content={`Portfolio - ${info.name}`} />
       <meta property="twitter:description" content={info.about} />
       <meta
         property="twitter:image"
-        content={`${Astro.url.origin}/profile.png`}
+        content={`${info.baseUrl}/assets/profile.png`}
       />
     </MetaHead>
   </head>

@@ -1,4 +1,5 @@
 export const info = {
+  baseUrl: "https://astro-portfolio-uzair.vercel.app",
   name: "Uzair Ahmed",
   jobDescription: "Web Developer",
   about: `I'm a software engineer based in Toronto, Canada and also a
