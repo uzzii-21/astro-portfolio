@@ -4,8 +4,8 @@ slug: portfolio-website
 postType: project
 featureImage: /assets/images/design.png
 isFeatured: true
-# liveUrl: https://astro-portfolio-uzair.vercel.app/
-# githubUrl: https://github.com/uzzii-21/astro-portfolio
+liveUrl: https://astro-portfolio-uzair.vercel.app/
+githubUrl: https://github.com/uzzii-21/astro-portfolio
 author: Uzair Ahemd
 publishDate: 2022-04-09
 updated: 2022-04-09

@@ -1,4 +1,5 @@
 ---
+import "../../styles/post.css";
 import MetaHead from "@components/general/MetaHead.astro";
 import Layout from "@layouts/Layout.astro";
 
@@ -23,7 +24,7 @@ const { Content, frontmatter } = Astro.props.post;
   </head>
   <body>
     <Layout title={frontmatter.title}>
-      <article class="article my-16">
+      <article class="article mb-16">
         <Content />
       </article>
     </Layout>
