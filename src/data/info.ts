@@ -10,50 +10,10 @@ export const info = {
 
   experience: [
     {
-      name: "Microsoft Corporation",
-      location: " Selfbook / US - New York",
+      name: "Internative Labs",
+      location: " karachi",
       startDate: "Jul 2021",
-      endDate: "Aug 2021",
-      description: [
-        "- Developing screens and UI components for the web application using React and Tailwind.",
-        "- Fixing UI issues and integrating backend APIs with Redux Saga.",
-      ],
-    },
-    {
-      name: "Microsoft Corporation",
-      location: " Selfbook / US - New York",
-      startDate: "Jul 2021",
-      endDate: "Aug 2021",
-      description: [
-        "- Developing screens and UI components for the web application using React and Tailwind.",
-        "- Fixing UI issues and integrating backend APIs with Redux Saga.",
-      ],
-    },
-    {
-      name: "Microsoft Corporation",
-      location: " Selfbook / US - New York",
-      startDate: "Jul 2021",
-      endDate: "Aug 2021",
-      description: [
-        "- Developing screens and UI components for the web application using React and Tailwind.",
-        "- Fixing UI issues and integrating backend APIs with Redux Saga.",
-      ],
-    },
-    {
-      name: "Microsoft Corporation",
-      location: " Selfbook / US - New York",
-      startDate: "Jul 2021",
-      endDate: "Aug 2021",
-      description: [
-        "- Developing screens and UI components for the web application using React and Tailwind.",
-        "- Fixing UI issues and integrating backend APIs with Redux Saga.",
-      ],
-    },
-    {
-      name: "Microsoft Corporation",
-      location: " Selfbook / US - New York",
-      startDate: "Jul 2021",
-      endDate: "Aug 2021",
+      endDate: "Present",
       description: [
         "- Developing screens and UI components for the web application using React and Tailwind.",
         "- Fixing UI issues and integrating backend APIs with Redux Saga.",
