@@ -4,14 +4,12 @@ import { info } from "@data";
 import Layout from "@layouts/Layout.astro";
 import Hero from "@components/home/Hero.astro";
 import Experience from "@components/home/Experience.astro";
-import FeatureProjects from "@components/general/FeatureProjects.astro";
+import ProjectsWrapper from "@components/general/ProjectsWrapper.astro";
 import MetaHead from "@components/general/MetaHead.astro";
 
-const projects = await Astro.glob("../posts/*.{md, mdx}");
-
-const featureProjects = projects.map((feature, index) => {
-  if (feature.frontmatter.isFeatured && index < 6) {
-    return feature.frontmatter;
+const featureProjects = info.projects.map((project, index) => {
+  if (project.isFeatured && index < 6) {
+    return project;
   }
 });
 ---
@@ -33,7 +31,7 @@ const featureProjects = projects.map((feature, index) => {
       <Experience title={"EDUCATION"} details={info.education} />
       <section>
         <h2 class="w-[15rem] dark:text-light mt-16">FEATURE PROJECTS</h2>
-        <FeatureProjects projects={featureProjects} />
+        <ProjectsWrapper projects={featureProjects} />
       </section>
     </Layout>
   </body>

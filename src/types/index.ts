@@ -23,16 +23,10 @@ export interface IExperiences {
 
 export interface IProject {
   title: string;
-  slug: string;
-  postType: string;
-  featureImage: string;
   isFeatured: boolean;
-  effect: string;
-  liveUrl: string;
+  thumbnail: string;
   githubUrl: string;
-  author: string;
-  publishDate: string;
-  updated: string;
+  liveUrl: string;
 }
 export interface IProjects {
   projects: IProject[];

@@ -1,13 +1,11 @@
 ---
-import FeatureProjects from "@components/general/FeatureProjects.astro";
+import { info } from "@data";
+
+import ProjectsWrapper from "@components/general/ProjectsWrapper.astro";
 import MetaHead from "@components/general/MetaHead.astro";
 import Layout from "@layouts/Layout.astro";
 
-const projects = await Astro.glob("../../posts/*.{md, mdx}");
-
-const featureProjects = projects.map(
-  (feature) => feature.frontmatter.isFeatured && feature.frontmatter
-);
+const Projects = info.projects.map((project) => project);
 ---
 
 <!DOCTYPE html>
@@ -16,13 +14,14 @@ const featureProjects = projects.map(
     <MetaHead
       title={"Projects"}
       description={"All projects are available in this page."}
+      ogImageUrl={"/assets/images/profile.png"}
     />
   </head>
 
   <body>
     <Layout>
       <h1 style="line-height: 1.2;">Projects</h1>
-      <FeatureProjects projects={featureProjects} />
+      <ProjectsWrapper projects={Projects} />
     </Layout>
   </body>
 </html>

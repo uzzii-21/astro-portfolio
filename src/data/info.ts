@@ -76,6 +76,7 @@ export const info = {
       description: ["Matriculation,  Computer Science"],
     },
   ],
+
   socialMedia: {
     facebook: "https://www.facebook.com/profile.php?id=100022899849583",
     twitter: "https://twitter.com/Uzzii_21",
@@ -83,4 +84,14 @@ export const info = {
     email: "uzairahmed@74372gmail.com",
     linkedin: "https://www.linkedin.com/in/uzzii21/",
   },
+
+  projects: [
+    {
+      title: "Astro Portfolio",
+      isFeatured: true,
+      thumbnail: "/assets/images/astro-portfolio.png",
+      githubUrl: "https://github.com/uzzii-21",
+      liveUrl: "https://www.github.com/uzzii-21/projects   ",
+    },
+  ],
 };

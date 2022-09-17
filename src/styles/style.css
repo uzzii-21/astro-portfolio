@@ -38,36 +38,4 @@
   .footer-icons {
     @apply dark:text-light flex items-center border border-dark dark:border-light p-4 rounded-lg justify-center;
   }
-
-  /* article */
-  #article img {
-    @apply rounded-lg mb-4;
-  }
-  #article > pre > code {
-    @apply bg-transparent dark:bg-transparent;
-  }
-  #article > pre {
-    @apply bg-slate-100 dark:bg-[#202020] p-8 my-4 rounded-md;
-  }
-  #article code {
-    @apply bg-slate-100 dark:bg-[#202020] py-1 px-2 rounded m-1;
-  }
-  #article table {
-    @apply my-4;
-  }
-  th,
-  td {
-    @apply border border-gray p-2;
-  }
-  th,
-  td,
-  #article p,
-  #article a {
-    @apply font-inter text-dark-gray dark:text-light;
-  }
-  #article h2,
-  #article h3,
-  #article h4 {
-    @apply dark:text-light my-3;
-  }
 }
