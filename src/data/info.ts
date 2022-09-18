@@ -90,8 +90,8 @@ export const info = {
       title: "Astro Portfolio",
       isFeatured: true,
       thumbnail: "/assets/images/astro-portfolio.png",
-      githubUrl: "https://github.com/uzzii-21",
-      liveUrl: "https://www.github.com/uzzii-21/projects   ",
+      githubUrl: "https://github.com/uzzii-21/astro-portfolio",
+      liveUrl: "https://astro-portfolio-uzair.vercel.app/",
     },
   ],
 };
