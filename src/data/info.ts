@@ -52,8 +52,8 @@ export const info = {
     {
       name: "Atmiya Institute of Technology and Science",
       location: "Gujarat, India",
-      startDate: "2019",
-      endDate: "2022",
+      startDate: "2021",
+      endDate: "2024",
       description: [
         "Diploma in Computer Engineering",
       ],
