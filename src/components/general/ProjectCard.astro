@@ -60,7 +60,9 @@ const { title, thumbnail, liveUrl, githubUrl } = projectDetail;
     }
   </div>
   <a
-  href={liveUrl ? liveUrl : githubUrl}>
+  href={liveUrl ? liveUrl : githubUrl}
+  target="_blank"
+  >
     <img
     src={thumbnail}
     class="w-full h-auto scale-100 hover:scale-110 transition duration-[1.5s]"
