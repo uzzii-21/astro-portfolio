@@ -14,5 +14,8 @@
     "@astrojs/tailwind": "^1.0.0",
     "astro": "^1.0.0",
     "astro-robots-txt": "^0.3.8"
+  },
+  "dependencies": {
+    "framer-motion": "^10.6.0"
   }
 }

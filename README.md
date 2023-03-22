@@ -2,10 +2,6 @@
 
 Portfolio built in astro :)
 
-## portfolio template for Developers!
-
-![Feature Image](./public/assets/images/astro-portfolio.png)
-
 ## 🚀 Project Structure
 
 Inside of this project, you'll see the following folders and files:
