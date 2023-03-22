@@ -1,0 +1,27 @@
+---
+import { info } from "@data";
+
+import ProjectsWrapper from "@components/general/ProjectsWrapper.astro";
+import MetaHead from "@components/general/MetaHead.astro";
+import Layout from "@layouts/Layout.astro";
+
+const Projects = info.projects.map((project) => project);
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <MetaHead
+      title={"Projects"}
+      description={"All projects are available in this page."}
+      ogImageUrl={"/assets/images/profile.png"}
+    />
+  </head>
+
+  <body>
+    <Layout>
+      <h1 style="line-height: 1.2;">Projects</h1>
+      <ProjectsWrapper projects={Projects} />
+    </Layout>
+  </body>
+</html>
