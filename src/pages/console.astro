@@ -1,0 +1,21 @@
+---
+import Layout from "@layouts/Layout.astro";
+import MetaHead from "@components/general/MetaHead.astro";
+import { ConsoleComp } from "@components/general/ConsoleComp.js";
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <MetaHead
+      title={"Console | Portfolio"}
+      description={"Software Engineer based in India."}
+    />
+  </head>
+
+  <body>
+    <Layout>
+      <ConsoleComp client:load/>
+    </Layout>
+  </body>
+</html>
