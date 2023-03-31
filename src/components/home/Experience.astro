@@ -5,7 +5,7 @@ const { title, details } = Astro.props as IExperiences;
 ---
 
 <section
-  class="flex items-start justify-between flex-col sm:flex-row dark:text-light"
+  class="flex items-start justify-between flex-col sm:flex-row dark:text-light container"
 >
   <h2 class="w-[15rem] mt-16">{title}</h2>
   <div class="w-full">
@@ -18,7 +18,9 @@ const { title, details } = Astro.props as IExperiences;
               {item.startDate} - {item.endDate}
             </p>
           </div>
-          <p class="text-sm mt-3 text-blue">{item.location}</p>
+          <p class="text-sm mt-3 text-teal-700 dark:text-blue">
+            {item.location}
+          </p>
           <ul class="mt-3">
             {item.description.map((item) => (
               <li class="dark:text-gray">{item}</li>

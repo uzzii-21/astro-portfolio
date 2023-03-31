@@ -1,13 +1,18 @@
 ---
 import { IHeroProps } from "@types";
-
 const { name, about } = Astro.props as IHeroProps;
 ---
 
-<section>
-  <p class="dark:text-light mt-[117px]">Hey, I’m</p>
-  <h1>{name}</h1>
-  <p class="dark:text-light text-lg mb-16">
-    {about}
-  </p>
+<section
+  class="bg-cover relative bg-center h-[750px] w-full flex flex-col justify-center items-center"
+>
+  <div class="container absolute z-10">
+    <h1>{name}</h1>
+    <p class="dark:text-light text-lg mb-16">
+      {about}
+    </p>
+  </div>
+  <canvas class="opacity-30" id="hero"></canvas>
 </section>
+
+<script></script>

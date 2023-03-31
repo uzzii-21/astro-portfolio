@@ -1,52 +1,44 @@
 export const info = {
-  baseUrl: "https://astro-portfolio-uzair.vercel.app",
-  name: "Uzair Ahmed",
+  baseUrl: "https://",
+  name: "Adelkis Dev",
   jobDescription: "Web Developer",
-  about: `I'm a software engineer based in Karachi, Pakistan.
-   I enjoy creating things that live on the internet, whether that be websites, applications, or anything in between.
-   I have been working for 3 year, with a demonstrated history of working in the Computer Software industry. Skilled in Front-end Development.
-   I have 3 years of experience in HTML, CSS, SCSS, JavaScript, Bootstrap, tailwind CSS, StyledComponent, React JS and Next JS. Hence,
-   I have successfully completed several web projects from scratch. 
-   Yet, I learn continuously and never stop exploring new technologies.
-   So, I have also gained knowledge of Node JS, Express JS, Mongo DB, Python,
-   firebase and React Native with time.
+  about: `Encontrar una solución justa con un equipo es lo que me define como profesional. Considero que la mejor forma de llevar a cabo una idea es con una sana discusión. Mi objetivo es generar impacto por medio de un desarrollo sencillo pero eficiente.
   `,
 
   experience: [
     {
-      name: "InterNative Labs, LLC",
-      location: "Karāchi, Sindh, Pakistan",
-      startDate: "Apr 2022",
-      endDate: "Present",
+      name: "RTO Las Parejas",
+      location: "Las Parejas, Santa Fe",
+      startDate: "Mayo 2021",
+      endDate: "Presente",
       description: [
-        "- Developing screens and UI components for the web application using React and Tailwind.",
-        "- Fixing UI issues and integrating backend APIs with Redux Saga.",
+        "✓ Se mejoró la captación y recuperación de clientes en 30% con una estrategia de seguimiento por WhatsApp.",
+        "✓ Se creó una página web para captar nuevos clientes por medio del tráfico orgánico.",
+        "✓ Se mejoró el impacto y la presencia como referente en la región por medio de una campaña en redes.",
       ],
     },
 
     {
-      name: "Coupon Approve (Remote)",
-      location: "Amsterdam, North Holland, Netherlands",
-      startDate: "Nov 2020",
-      endDate: "Apr 2022",
+      name: "Alkemy (Remote)",
+      location: "Buenos Aires, Argentina",
+      startDate: "Oct 2022",
+      endDate: "Nov 2022",
       description: [
-        "✓ Developing code in accordance with appropriate design and architectural rules",
-        "✓ Documenting, testing, deployment, maintenance, support of platforms, applications, databases and solutions",
-        "✓ Help and training of other colleagues",
-        "✓ Others tasks connected to the nature of the job",
-        "✓ Code Improvements and Refactoring ",
-        "✓ Best Practices and Rules Maintainer",
+        "✓ Cree una aplicación web de criptomonedas.",
+        "✓ Ayudé en la capacitación a otros compañeros.",
+        "✓ Codigo mejorado y refactorizado.",
+        "✓ Se mantuvo las mejores prácticas y reglas de la empresa.",
       ],
     },
 
     {
-      name: "Interns Pakistan",
-      location: "Pakistan",
-      startDate: "Oct 2020",
-      endDate: "Nov 2020",
+      name: "Matias Bayman - (freelance Remote)",
+      location: "Las Parejas, Santa Fe",
+      startDate: "Feb 2021",
+      endDate: "Jun 2021",
       description: [
-        "An Immersive Internship Program that prepares me for the world's most in-demand career. A six weeks program completely based on learning and challenges.",
-        "The internship track is built by an industry expert that let develop the skills in the areas most important ",
+        "✓ Realice un excautivo estudio de mercado para un proyecto de ingeniera mecánica, se buscó los posibles clientes potenciales y por cuáles redes se mueven.",
+        "✓ Se creó una página web para captar profesionales en el campo de la homologación vehicular logrando causar un fuerte impactó y posicionarlo como referente en el campo.",
       ],
     },
   ],
@@ -78,20 +70,53 @@ export const info = {
   ],
 
   socialMedia: {
-    facebook: "https://www.facebook.com/profile.php?id=100022899849583",
-    twitter: "https://twitter.com/Uzzii_21",
-    github: "https://github.com/uzzii-21",
-    email: "uzairahmed@74372gmail.com",
-    linkedin: "https://www.linkedin.com/in/uzzii21/",
+    twitter: "https://twitter.com/adelkisDev",
+    github: "https://github.com/adelquis-molinari",
+    email: "adelkis003@gmail.com",
+    linkedin: "https://www.linkedin.com/in/molinari-adelquis/",
   },
 
   projects: [
     {
-      title: "Astro Portfolio",
+      title: "Crypto Hoy",
       isFeatured: true,
-      thumbnail: "/assets/images/astro-portfolio.png",
-      githubUrl: "https://github.com/uzzii-21/astro-portfolio",
-      liveUrl: "https://astro-portfolio-uzair.vercel.app/",
+      thumbnail: "https://res.cloudinary.com/da4bwtyqa/image/upload/c_scale,w_512/v1680262803/web%20adelkis.dev/project/crypto-hoy_fmtrkv.webp",
+      githubUrl: "https://github.com/adelquis-molinari/Crypto-hoy",
+      liveUrl: "https://crypto-hoy.vercel.app",
     },
+    {
+      title: "EvuCar",
+      isFeatured: true,
+      thumbnail: "https://res.cloudinary.com/da4bwtyqa/image/upload/c_scale,w_512/v1680262803/web%20adelkis.dev/project/evucar_h5pty0.webp",
+      githubUrl: "https://github.com/adelquis-molinari/Evuca-Concesionaria",
+      liveUrl: "https://evuca-concesionaria.vercel.app/",
+    },
+    {
+      title: "Matias Bayma",
+      isFeatured: true,
+      thumbnail: "https://res.cloudinary.com/da4bwtyqa/image/upload/c_scale,w_512/v1680262803/web%20adelkis.dev/project/matias-bayma_arjyhi.webp",
+      liveUrl: "https://crypto-hoy.vercel.app/login",
+    },
+    // {
+    //   title: "Nivia Modas",
+    //   isFeatured: true,
+    //   thumbnail: "/assets/images/proyectos/nivia-modas.webp",
+    //   githubUrl: "https://github.com/adelquis-molinari/Nivia-Pino",
+    //   liveUrl: "https://crypto-hoy.vercel.app/login",
+    // },
+    // {
+    //   title: "Administrador de Citas",
+    //   isFeatured: true,
+    //   thumbnail: "/assets/images/proyectos/administrador-citas.webp",
+    //   githubUrl: "https://github.com/adelquis-molinari/Administrador-de-Citas",
+    //   liveUrl: "https://administrador-de-citas-five.vercel.app",
+    // },
+    {
+      title: "Chat App",
+      isFeatured: true,
+      thumbnail: "https://res.cloudinary.com/da4bwtyqa/image/upload/c_scale,w_512/v1680262795/web%20adelkis.dev/project/chat-ai-clone-de-chat-gpt3_peglje.png",
+      githubUrl: "https://github.com/adelquis-molinari/chat-ai.git",
+      liveUrl: "https://chat-ai-seven-beta.vercel.app/",
+    }
   ],
 };

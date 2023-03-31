@@ -6,16 +6,17 @@ import { createLogo } from "@utils";
 <header
   class="container flex items-center justify-between h-[80px] sm:h-[123px]"
 >
-  <a
-    class="text-2xl dark:text-light font-semibold dark:font-semibold font-outfit"
-    href="/"
-    >{createLogo(info.name)}.
+  <a class="text-2xl dark:text-light font-outfit flex items-baseline" href="/">
+    <!-- {createLogo(info.name)}. -->
+    <img class="w-6" src="/assets/images/favicon.png" alt="adelkis logo" />
+    <span class="pl-1"> delkis</span>
+    <span class="text-teal-500 dark:text-teal-400 font-medium pl-1"> Dev</span>
   </a>
   <nav>
     <ul class="flex items-center">
       <li>
         <a class="p-4 dark:text-light block text-lg" href="/projects"
-          >Projects</a
+          >Proyectos</a
         >
       </li>
       <!-- <li>
@@ -52,7 +53,7 @@ import { createLogo } from "@utils";
     document.documentElement.setAttribute("data-theme", "light");
     isDark = true;
     themeButton.innerHTML = moon;
-    browserTheme.content = "#FFFFFF";
+    browserTheme.content = "#ecf2f9";
   } else {
     document.documentElement.setAttribute("data-theme", "dark");
     isDark = false;
@@ -73,7 +74,7 @@ import { createLogo } from "@utils";
       localStorage.theme = "light";
       isDark = true;
       themeButton.innerHTML = moon;
-      browserTheme.content = "#FFFFFF";
+      browserTheme.content = "#ecf2f9";
     }
   };
 

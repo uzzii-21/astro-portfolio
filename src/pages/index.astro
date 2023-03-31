@@ -7,12 +7,11 @@ import Experience from "@components/home/Experience.astro";
 import ProjectsWrapper from "@components/general/ProjectsWrapper.astro";
 import MetaHead from "@components/general/MetaHead.astro";
 
-const featureProjects = info.projects.reduce((accumulator, project) => {
-  if (accumulator.length < 6 && project.isFeatured) {
-    accumulator.push(project);
+const featureProjects = info.projects.map((project, index) => {
+  if (project.isFeatured && index < 6) {
+    return project;
   }
-  return accumulator;
-}, []);
+});
 ---
 
 <!DOCTYPE html>
@@ -28,12 +27,12 @@ const featureProjects = info.projects.reduce((accumulator, project) => {
   <body>
     <Layout>
       <Hero name={info.name} about={info.about} />
-      <Experience title={"EXPERIENCE"} details={info.experience} />
-      <Experience title={"EDUCATION"} details={info.education} />
-      <section>
-        <h2 class="w-[15rem] dark:text-light mt-16">FEATURE PROJECTS</h2>
+      <section class="container">
+        <h2 class="dark:text-light">PROYECTOS DESTACADOS</h2>
         <ProjectsWrapper projects={featureProjects} />
       </section>
+      <Experience title={"EXPERIENCE"} details={info.experience} />
+      <!-- <Experience title={"EDUCATION"} details={info.education} /> -->
     </Layout>
   </body>
 </html>
