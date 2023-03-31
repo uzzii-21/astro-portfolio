@@ -7,7 +7,7 @@ const { title, thumbnail, liveUrl, githubUrl, isFeatured } = projectDetail;
 ---
 
 {
-  isFeatured ? (
+  isFeatured && (
     <article class="w-full max-h-[25rem] overflow-hidden relative group">
       <div class="flex items-center absolute right-4 top-4 z-10">
         {githubUrl && (
@@ -44,7 +44,5 @@ const { title, thumbnail, liveUrl, githubUrl, isFeatured } = projectDetail;
         <h3 class="mr-2 text-xl">{title}</h3>
       </div>
     </article>
-  ) : (
-    <></>
   )
 }
