@@ -2,7 +2,7 @@ export const info = {
   baseUrl: "https://",
   name: "Adelkis Dev",
   jobDescription: "Web Developer",
-  about: `Encontrar una solución justa con un equipo es lo que me define como profesional. Considero que la mejor forma de llevar a cabo una idea es con una sana discusión. Mi objetivo es generar impacto por medio de un desarrollo sencillo pero eficiente.
+  about: `Mi enfoque profesional es encontrar soluciones justas a través de sana discusión en equipo, para generar impacto con desarrollos eficientes y simples.
   `,
 
   experience: [
@@ -12,9 +12,9 @@ export const info = {
       startDate: "Mayo 2021",
       endDate: "Presente",
       description: [
-        "✓ Se mejoró la captación y recuperación de clientes en 30% con una estrategia de seguimiento por WhatsApp.",
-        "✓ Se creó una página web para captar nuevos clientes por medio del tráfico orgánico.",
-        "✓ Se mejoró el impacto y la presencia como referente en la región por medio de una campaña en redes.",
+        "✓ Se aumentó la captación y recuperación de clientes en un 30% mediante una estrategia de seguimiento por WhatsApp.",
+        "✓ Se creó una página web optimizada para atraer tráfico orgánico y captar nuevos clientes.",
+        "✓ Se fortaleció la presencia y el reconocimiento de la marca en la región gracias a una campaña exitosa en redes sociales.",
       ],
     },
 
@@ -24,9 +24,9 @@ export const info = {
       startDate: "Oct 2022",
       endDate: "Nov 2022",
       description: [
-        "✓ Cree una aplicación web de criptomonedas.",
-        "✓ Ayudé en la capacitación a otros compañeros.",
-        "✓ Codigo mejorado y refactorizado.",
+        "✓ Desarrollé y lanzé con éxito una aplicación web de criptomonedas.",
+        "✓ Capacité a otros compañeros de equipo para mejorar sus habilidades técnicas.",
+        "✓ Mejoré y refactoricé el código para optimizar su rendimiento y mantenibilidad.",
         "✓ Se mantuvo las mejores prácticas y reglas de la empresa.",
       ],
     },
@@ -37,8 +37,8 @@ export const info = {
       startDate: "Feb 2021",
       endDate: "Jun 2021",
       description: [
-        "✓ Realice un excautivo estudio de mercado para un proyecto de ingeniera mecánica, se buscó los posibles clientes potenciales y por cuáles redes se mueven.",
-        "✓ Se creó una página web para captar profesionales en el campo de la homologación vehicular logrando causar un fuerte impactó y posicionarlo como referente en el campo.",
+        "✓ Realicé un exhaustivo estudio de mercado para un proyecto de ingeniería mecánica, identificando posibles clientes potenciales y las redes por las que se mueven.",
+        "✓ Diseñé y lancé con éxito una página web para atraer profesionales en el campo de la homologación vehicular, logrando un fuerte impacto y posicionando al proyecto como referente en el campo.",
       ],
     },
   ],
@@ -121,7 +121,13 @@ export const info = {
       isFeatured: true,
       thumbnail: "https://res.cloudinary.com/da4bwtyqa/image/upload/c_scale,w_512/v1680262795/web%20adelkis.dev/project/chat-ai-clone-de-chat-gpt3_peglje.png",
       githubUrl: "https://github.com/adelquis-molinari/chat-ai.git",
-      liveUrl: "https://chat-ai-seven-beta.vercel.app/",
+      isDestaq: false,
+    },
+    {
+      title: "RTO Las Parejas",
+      isFeatured: true,
+      thumbnail: "https://res.cloudinary.com/da4bwtyqa/image/upload/c_scale,w_512/v1681216519/web%20adelkis.dev/project/rto-las-parejas_ncvvr9.webp",
+      liveUrl: "https://rtolasparejas.com.ar/",
       isDestaq: true,
     }
   ],
