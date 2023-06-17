@@ -1,0 +1,12 @@
+---
+import { INavItemProps } from "@types";
+
+const { text, link } = Astro.props as INavItemProps;
+---
+
+<li>
+  <a
+    class="p-4 dark:text-light block text-lg hover:underline hover:text-blue dark:hover:text-blue transition-colors duration-200 ease-in"
+    href={link}>{text}</a
+  >
+</li>
