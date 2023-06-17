@@ -28,10 +28,10 @@ const featureProjects = info.projects.reduce((accumulator, project) => {
   <body>
     <Layout>
       <Hero name={info.name} about={info.about} />
-      <Experience title={"Experiencia"} details={info.experience} id="exp" />
+      <Experience title={"Experiencia"} details={info.experience} id="exp"/>
       <Experience title={"Educación"} details={info.education} id="edu" />
       <section>
-        <h2 class="w-[15rem] dark:text-light mt-16">FEATURE PROJECTS</h2>
+        <h2 class="w-[15rem] dark:text-light mt-16">Proyectos</h2>
         <ProjectsWrapper projects={featureProjects} />
       </section>
     </Layout>
