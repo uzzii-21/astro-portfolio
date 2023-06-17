@@ -9,8 +9,14 @@ export interface IHeroProps {
   about: string;
 }
 
+export interface INavItemProps {
+  text: string;
+  link: string;
+}
+
 export interface IExperience {
   name: string;
+  positiion: string;
   location: string;
   startDate: string;
   endDate: string;
