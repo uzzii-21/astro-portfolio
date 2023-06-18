@@ -28,7 +28,7 @@
     @apply text-6xl sm:text-8xl main-heading;
   }
   h2 {
-    @apply text-xl font-semibold;
+    @apply text-xl font-semibold underline decoration-4 decoration-blue;
   }
   p,
   li,
