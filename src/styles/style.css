@@ -36,6 +36,6 @@
     @apply font-inter text-dark-gray;
   }
   .footer-icons {
-    @apply dark:text-light flex items-center ring ring-blue odd:ring-purple dark:ring-light p-2 rounded-lg justify-center;
+    @apply dark:text-light flex items-center ring ring-dark dark:ring-light p-2 rounded-lg justify-center;
   }
 }
