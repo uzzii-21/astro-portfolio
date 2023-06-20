@@ -1,33 +1,46 @@
 ---
-import { info } from "@data";
-import { createLogo } from "@utils";
+import {info} from "@data";
+import {createLogo} from "@utils";
 import NavItem from "./NavItem.astro";
 ---
 
 <header
-  class="container flex items-center justify-between h-[80px] sm:h-[123px]"
->
+  class="container flex items-center justify-between h-[80px] sm:h-[123px]">
   <a
     class="text-2xl dark:text-light font-semibold dark:font-semibold font-outfit"
     href="/"
     >{createLogo(info.name)}.
   </a>
-  <nav>
-    <ul class="flex items-center">
-      <li>
+  <nav class="flex items-center">
+    <button
+      id="dropdownButton"
+      data-dropdown-toggle="dropdown"
+      class="text-dark dark:text-white focus:ring focus:outline-none focus:ring-sky-300 font-medium rounded-lg text-sm px-4 py-2.5 text-center inline-flex md:hidden items-center"
+      type="button">
+      <svg
+        class="fill-current w-6 h-6"
+        viewBox="0 0 20 20"
+        xmlns="http://www.w3.org/2000/svg"
+        ><title>Menu</title><path
+          d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path></svg
+      >
+    </button>
+    <!-- Dropdown menu -->
+    <div
+      id="dropdown"
+      class="z-10 hidden w-screen inset-[10px_auto_auto_0px] translate-y-[70px] shadow md:translate-x-0 md:translate-y-0 md:w-auto md:shadow-none py-2 bg-white dark:bg-dark md:flex md:items-center md:mt-0 rounded-lg">
+      <ul class="flex flex-col gap-5 md:w-auto md:flex-row items-center">
         <NavItem text="Experiencia" link="#experience" />
         <NavItem text="Educación" link="#education" />
         <NavItem text="Projectos" link="#projects" />
         <NavItem text="Contacto" link="#contact" />
-      </li>
-      <li>
-        <button
-          aria-label="theme-button"
-          id="theme-button"
-          class="rounded-lg p-4 ml-2 bg-slate-100  dark:ring-white dark:bg-[#202020] dark:text-light"
-        ></button>
-      </li>
-    </ul>
+      </ul>
+    </div>
+    <button
+      aria-label="theme-button"
+      id="theme-button"
+      class="rounded-lg order-first md:order-last p-4 ml-2 bg-slate-100 dark:focus:ring-white dark:bg-[#202020] dark:text-light focus:ring focus:outline-none focus:ring-sky-300"
+    ></button>
   </nav>
 </header>
 
@@ -77,4 +90,15 @@ const darkModeHandler = () => {
 };
 
 themeButton.addEventListener("click", darkModeHandler);
+</script>
+<script is:inline>
+const dropdownButton = document.getElementById("dropdownButton");
+const menu = document.getElementById("dropdown");
+dropdownButton.addEventListener("click", () => {
+  if (menu.classList.contains("hidden")) {
+    menu.classList.replace("hidden", "absolute");
+  } else {
+    menu.classList.replace("absolute", "hidden");
+  }
+});
 </script>
