@@ -1,11 +1,12 @@
 ---
-import {info} from "@data";
-import {createLogo} from "@utils";
+import { info } from "@data";
+import { createLogo } from "@utils";
 import NavItem from "./NavItem.astro";
 ---
 
 <header
-  class="container flex items-center justify-between h-[80px] sm:h-[123px]">
+  class="container flex items-center justify-between h-[80px] sm:h-[123px]"
+>
   <a
     class="text-2xl dark:text-light font-semibold dark:font-semibold font-outfit"
     href="/"
@@ -16,7 +17,8 @@ import NavItem from "./NavItem.astro";
       id="dropdownButton"
       data-dropdown-toggle="dropdown"
       class="rounded-lg order-first md:order-last p-4 ml-2 bg-slate-100 dark:focus:ring-white dark:bg-[#202020] dark:text-light focus:ring focus:outline-none focus:ring-sky-300 flex md:hidden items-center"
-      type="button">
+      type="button"
+    >
       <svg
         class="fill-current w-[18px] h-[18px]"
         viewBox="0 0 20 20"
@@ -28,7 +30,8 @@ import NavItem from "./NavItem.astro";
     <!-- Dropdown menu -->
     <div
       id="dropdown"
-      class="z-10 hidden w-screen inset-[10px_auto_auto_0px] translate-y-[70px] shadow md:translate-x-0 md:translate-y-0 md:w-auto md:shadow-none py-2 bg-white dark:bg-dark md:flex md:items-center md:mt-0 rounded-lg">
+      class="z-10 hidden w-56 right-4 origin-top-right translate-y-36 shadow-lg ring-1 ring-black ring-opacity-5 md:ring-0 md:translate-x-0 md:translate-y-0 md:w-auto md:shadow-none py-4 bg-white dark:bg-current md:flex md:items-center md:mt-0 rounded-lg"
+    >
       <ul class="flex flex-col gap-5 md:w-auto md:flex-row items-center">
         <NavItem text="Experiencia" link="#experience" />
         <NavItem text="Educación" link="#education" />
@@ -100,5 +103,5 @@ dropdownButton.addEventListener("click", () => {
   } else {
     menu.classList.replace("absolute", "hidden");
   }
-});
+  });
 </script>
