@@ -1,12 +1,11 @@
 ---
-import { info } from "@data";
-import { createLogo } from "@utils";
+import {info} from "@data";
+import {createLogo} from "@utils";
 import NavItem from "./NavItem.astro";
 ---
 
 <header
-  class="container flex items-center justify-between h-[80px] sm:h-[123px]"
->
+  class="container flex items-center justify-between h-[80px] sm:h-[123px]">
   <a
     class="text-2xl dark:text-light font-semibold dark:font-semibold font-outfit"
     href="/"
@@ -17,8 +16,7 @@ import NavItem from "./NavItem.astro";
       id="dropdownButton"
       data-dropdown-toggle="dropdown"
       class="rounded-lg order-first md:order-last p-4 ml-2 bg-slate-100 dark:focus:ring-white dark:bg-[#202020] dark:text-light focus:ring focus:outline-none focus:ring-sky-300 flex md:hidden items-center"
-      type="button"
-    >
+      type="button">
       <svg
         class="fill-current w-[18px] h-[18px]"
         viewBox="0 0 20 20"
@@ -30,8 +28,7 @@ import NavItem from "./NavItem.astro";
     <!-- Dropdown menu -->
     <div
       id="dropdown"
-      class="z-10 hidden w-56 right-4 origin-top-right translate-y-36 shadow-lg ring-1 ring-black ring-opacity-5 md:ring-0 md:translate-x-0 md:translate-y-0 md:w-auto md:shadow-none py-4 bg-white dark:bg-current md:flex md:items-center md:mt-0 rounded-lg"
-    >
+      class="z-10 hidden w-56 right-4 origin-top-right translate-y-36 shadow-lg ring-1 ring-black ring-opacity-5 md:ring-0 md:translate-x-0 md:translate-y-0 md:w-auto md:shadow-none py-4 bg-white dark:bg-current md:flex md:items-center md:mt-0 rounded-lg">
       <ul class="flex flex-col gap-5 md:w-auto md:flex-row items-center">
         <NavItem text="Experiencia" link="#experience" />
         <NavItem text="Educación" link="#education" />
@@ -53,6 +50,14 @@ const sun = `<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" view
 const themeButton = document.getElementById("theme-button");
 const browserTheme = document.querySelector('[name="theme-color"]');
 let isDark;
+
+const setDocumentAttributes = (dataTheme, themeIcon, browserColor) => {
+  document.documentElement.setAttribute("data-theme", dataTheme);
+  isDark = dataTheme === "light";
+  themeButton.innerHTML = themeIcon;
+  browserTheme.content = browserColor;
+}
+
 const theme = (() => {
   if (typeof localStorage !== "undefined" && localStorage.getItem("theme")) {
     return localStorage.getItem("theme");
@@ -64,36 +69,25 @@ const theme = (() => {
 })();
 
 if (theme === "light") {
-  document.documentElement.setAttribute("data-theme", "light");
-  isDark = true;
-  themeButton.innerHTML = moon;
-  browserTheme.content = "#FFFFFF";
+  setDocumentAttributes("light", moon, "#FFFFFF")
 } else {
-  document.documentElement.setAttribute("data-theme", "dark");
-  isDark = false;
-  themeButton.innerHTML = sun;
-  browserTheme.content = "#111111";
+  setDocumentAttributes("dark", sun, "#111111")
 }
 window.localStorage.setItem("theme", theme);
 
 const darkModeHandler = () => {
   if (isDark) {
-    document.documentElement.setAttribute("data-theme", "dark");
+    setDocumentAttributes("dark", sun, "#111111")
     localStorage.theme = "dark";
-    isDark = false;
-    themeButton.innerHTML = sun;
-    browserTheme.content = "#111111";
   } else {
-    document.documentElement.setAttribute("data-theme", "light");
+    setDocumentAttributes("light", moon, "#FFFFFF")
     localStorage.theme = "light";
-    isDark = true;
-    themeButton.innerHTML = moon;
-    browserTheme.content = "#FFFFFF";
   }
 };
 
 themeButton.addEventListener("click", darkModeHandler);
 </script>
+
 <script is:inline>
 const dropdownButton = document.getElementById("dropdownButton");
 const menu = document.getElementById("dropdown");
@@ -103,5 +97,5 @@ dropdownButton.addEventListener("click", () => {
   } else {
     menu.classList.replace("absolute", "hidden");
   }
-  });
+});
 </script>
