@@ -63,10 +63,10 @@ export const info = {
   ],
 
   socialMedia: {
-    facebook: "",
-    twitter: "",
+    facebook: "https://facebook.com",
+    twitter: "https://twitter.com",
     github: "https://github.com/MrOlivo",
-    email: "",
+    email: "mailto:user@domain.com",
     linkedin: "https://www.linkedin.com/in/edwin-olivo-garcia/",
   },
 
@@ -74,7 +74,11 @@ export const info = {
     {
       title: "Astro Portfolio",
       isFeatured: true,
-      thumbnail: "/assets/images/astro-portfolio.png",
+      thumbnails: {
+        png: "/assets/images/astro-portfolio.png",
+        avif: "/assets/images/astro-portfolio.avif",
+        webp: "/assets/images/astro-portfolio.webp",
+      },
       githubUrl: "https://github.com/MrOlivo/astro-portfolio",
       liveUrl: "",
     },

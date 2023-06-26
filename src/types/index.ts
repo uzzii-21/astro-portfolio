@@ -30,10 +30,18 @@ export interface IExperiences {
 export interface IProject {
   title: string;
   isFeatured: boolean;
-  thumbnail: string;
+  thumbnails: IThumbnail;
   githubUrl: string;
   liveUrl: string;
 }
+
+export interface IThumbnail {
+  png: string;
+  jpg?: string;
+  avif?: string;
+  webp?: string;
+}
+
 export interface IProjects {
   projects: IProject[];
 }
