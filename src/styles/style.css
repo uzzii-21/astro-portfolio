@@ -13,9 +13,11 @@
   body {
     @apply bg-light dark:bg-dark;
   }
+
   .container {
     @apply max-w-[1112px] mx-auto px-4;
   }
+
   h1,
   h2,
   h3,
@@ -24,18 +26,22 @@
   h6 {
     @apply font-outfit;
   }
+
   h1 {
     @apply text-6xl sm:text-8xl main-heading;
   }
+
   h2 {
     @apply text-xl font-semibold underline decoration-4 decoration-blue;
   }
+
   p,
   li,
   a {
     @apply font-inter text-dark-gray;
   }
+
   .footer-icons {
-    @apply dark:text-light flex items-center ring ring-dark dark:ring-light p-2 rounded-lg justify-center;
+    @apply flex items-center p-3 ml-2 rounded-lg justify-center bg-slate-200 dark:bg-sky-200 hover:bg-indigo-400 dark:hover:bg-indigo-400;
   }
 }
