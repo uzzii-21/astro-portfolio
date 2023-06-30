@@ -42,6 +42,6 @@
   }
 
   .footer-icons {
-    @apply flex items-center p-3 ml-2 rounded-lg justify-center bg-slate-200 dark:bg-sky-200 hover:bg-indigo-400 dark:hover:bg-indigo-400;
+    @apply flex items-center p-3 ml-2 rounded-lg justify-center bg-indigo-300 dark:bg-sky-200 hover:bg-sky-300 dark:hover:bg-indigo-300;
   }
 }
