@@ -1,5 +1,5 @@
 /* ========== import font source ========== */
-@import "fonts.css";
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Outfit:wght@400;600&display=swap");
 
 /* ========== import custom styles ========== */
 @import "custom-styles.css";
