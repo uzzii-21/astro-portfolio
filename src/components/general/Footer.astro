@@ -1,9 +1,11 @@
 ---
 import { info } from "@data";
+const { ...props } = Astro.props;
 ---
 
 <footer
-  class="container flex sm:flex-row flex-col justify-between items-center mb-8 sm:mb-4">
+  class="container flex sm:flex-row flex-col justify-between items-center mb-8 sm:mb-4"
+  { ...props }>
   <p class="dark:text-light text-right my-8">
     Improved by <strong>Edwin Olivo</strong>
   </p>
