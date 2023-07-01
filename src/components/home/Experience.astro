@@ -19,7 +19,9 @@ const { title, details, ...props } = Astro.props as IExperiences;
               {item.startDate} - {item.endDate}
             </p>
           </div>
-          <p class="text-sm mt-3 text-sky-600 dark:text-blue">{item.location}</p>
+          <p class="text-sm mt-3 text-cyan-900 dark:text-blue">
+            {item.location}
+          </p>
           <ul class="mt-3">
             {item.description.map((item) => (
               <li class="dark:text-gray list-disc marker:text-blue">{item}</li>
