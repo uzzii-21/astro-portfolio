@@ -80,7 +80,7 @@ export const info = {
         webp: "/assets/images/astro-portfolio.webp",
       },
       githubUrl: "https://github.com/MrOlivo/astro-portfolio",
-      liveUrl: "",
+      liveUrl: "https://mrolivo.github.io",
     },
   ],
 };
