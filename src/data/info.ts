@@ -72,7 +72,7 @@ export const info = {
 
   projects: [
     {
-      title: "Astro Portfolio",
+      title: "Personal Portfolio",
       isFeatured: true,
       thumbnails: {
         png: "/assets/images/astro-portfolio.png",
