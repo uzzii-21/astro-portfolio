@@ -82,5 +82,16 @@ export const info = {
       githubUrl: "https://github.com/MrOlivo/astro-portfolio",
       liveUrl: "https://mrolivo.github.io",
     },
+    {
+      title: "Brutalism Concept website",
+      isFeatured: true,
+      thumbnails: {
+        png: "/assets/images/astro-portfolio.png",
+        avif: "/assets/images/astro-portfolio.avif",
+        webp: "/assets/images/astro-portfolio.webp",
+      },
+      githubUrl: "https://github.com/MrOlivo/Brutalism-UI",
+      liveUrl: "https://mrolivo.github.io/Brutalism-UI",
+    },
   ],
 };
