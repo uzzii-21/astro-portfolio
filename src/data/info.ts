@@ -86,9 +86,9 @@ export const info = {
       title: "Brutalism Concept website",
       isFeatured: true,
       thumbnails: {
-        png: "/assets/images/astro-portfolio.png",
-        avif: "/assets/images/astro-portfolio.avif",
-        webp: "/assets/images/astro-portfolio.webp",
+        png: "/assets/images/brutalism.png",
+        avif: "/assets/images/brutalism.avif",
+        webp: "/assets/images/brutalism.webp",
       },
       githubUrl: "https://github.com/MrOlivo/Brutalism-UI",
       liveUrl: "https://mrolivo.github.io/Brutalism-UI",
