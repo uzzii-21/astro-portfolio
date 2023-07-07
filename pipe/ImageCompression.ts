@@ -1,7 +1,7 @@
 import fs from 'fs/promises';
 import sharp from "sharp"
 
-async function listDir(path) {
+async function listDir(path: string): Promise<string[]> {
   try {
     return await fs.readdir(path)
   } catch (err) {
@@ -10,12 +10,16 @@ async function listDir(path) {
 }
 
 const directoryPath = __dirname;
-let files = await listDir(directoryPath)
+const files = await listDir(directoryPath)
 const onlyImages = files.filter(file => file.split(".").pop() === "jpg")
 
-if(onlyImages.length === 0) process.exit();
+if(onlyImages.length === 0) {
+  console.error("No images were found.");
+  process.exit();
+}
 
-const promises = [];
+const promises: Array<sharp.Sharp> = [];
+const height: number = 400;
 
 onlyImages.forEach(file => {
   const fileName = directoryPath + "/" + file.split(".")[0];
@@ -23,26 +27,26 @@ onlyImages.forEach(file => {
 
   promises.push(
     sharpStream
-      .resize(400)
+      .resize(height)
       .png({ quality: 80 })
       .toFile(fileName + '.png', function (err) {
-        console.error(err)
+        console.error(err);
       }))
 
   promises.push(
     sharpStream
-      .resize(400)
+      .resize(height)
       .webp()
       .toFile(fileName + '.webp', function (err) {
-        console.error(err)
+        console.error(err);
       })
   )
   promises.push(
     sharpStream
-      .resize(400)
+      .resize(height)
       .avif()
       .toFile(fileName + '.avif', function (err) {
-        console.error(err)
+        console.error(err);
       })
   )
 });
