@@ -19,7 +19,7 @@ if(onlyImages.length === 0) {
 }
 
 const promises: Array<sharp.Sharp> = [];
-const height: number = 400;
+const height: number = 567;
 
 onlyImages.forEach(file => {
   const fileName = directoryPath + "/" + file.split(".")[0];
