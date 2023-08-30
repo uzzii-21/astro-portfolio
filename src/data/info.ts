@@ -70,11 +70,11 @@ export const info = {
 
   projects: [
     {
-      title: "Astro Portfolio",
+      title: "Portfolio",
       isFeatured: true,
       thumbnail: "/assets/images/astro-portfolio.png",
-      githubUrl: "https://github.com/uzzii-21/astro-portfolio",
-      liveUrl: "https://astro-portfolio-uzair.vercel.app/",
+      githubUrl: "https://github.com/ogorman89/portfolio",
+      liveUrl: "https://ianogorman.dev",
     },
   ],
 };
