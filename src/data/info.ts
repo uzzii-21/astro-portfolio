@@ -2,9 +2,7 @@ export const info = {
   baseUrl: "https://ianogorman.dev",
   name: "Ian O'Gorman",
   jobDescription: "Software Engineer",
-  about: `I'm a software engineer based in Portland, Oregon.
-   I love building things.
-   I'm a #100devs bootcamp student and currently building my portfolio with MongoDB, Express, React and Node. Stay tuned for more!
+  about: `I'm a software engineer based in Portland, Oregon. I love building things. I'm a #100devs bootcamp student and currently building my portfolio with MongoDB, Express, React and Node. Stay tuned for more!
   `,
 
   experience: [
