@@ -1,88 +1,71 @@
 export const info = {
-  baseUrl: "https://astro-portfolio-uzair.vercel.app",
-  name: "Uzair Ahmed",
-  jobDescription: "Web Developer",
-  about: `I'm a software engineer based in Karachi, Pakistan.
-   I enjoy creating things that live on the internet, whether that be websites, applications, or anything in between.
-   I have been working for 3 year, with a demonstrated history of working in the Computer Software industry. Skilled in Front-end Development.
-   I have 3 years of experience in HTML, CSS, SCSS, JavaScript, Bootstrap, tailwind CSS, StyledComponent, React JS and Next JS. Hence,
-   I have successfully completed several web projects from scratch. 
-   Yet, I learn continuously and never stop exploring new technologies.
-   So, I have also gained knowledge of Node JS, Express JS, Mongo DB, Python,
-   firebase and React Native with time.
+  baseUrl: "https://ianogorman.dev",
+  name: "Ian O'Gorman",
+  jobDescription: "Software Engineer",
+  about: `I'm a software engineer based in Portland, Oregon.
+   I love building things.
+   I'm a #100devs bootcamp student and currently building my portfolio with MongoDB, Express, React and Node. Stay tuned for more!
   `,
 
   experience: [
     {
-      name: "InterNative Labs, LLC",
-      location: "Karāchi, Sindh, Pakistan",
-      startDate: "Apr 2022",
+      name: "#100devs",
+      location: "remote",
+      startDate: "Jul 2023",
       endDate: "Present",
       description: [
-        "- Developing screens and UI components for the web application using React and Tailwind.",
-        "- Fixing UI issues and integrating backend APIs with Redux Saga.",
+        "✓ Developing",
+        "✓ Fixing",
       ],
     },
 
     {
-      name: "Coupon Approve (Remote)",
-      location: "Amsterdam, North Holland, Netherlands",
-      startDate: "Nov 2020",
-      endDate: "Apr 2022",
+      name: "Stack Metallurgical Group",
+      location: "Portland, Oregon",
+      startDate: "Sep 2020",
+      endDate: "Oct 2021",
       description: [
-        "✓ Developing code in accordance with appropriate design and architectural rules",
-        "✓ Documenting, testing, deployment, maintenance, support of platforms, applications, databases and solutions",
-        "✓ Help and training of other colleagues",
-        "✓ Others tasks connected to the nature of the job",
-        "✓ Code Improvements and Refactoring ",
-        "✓ Best Practices and Rules Maintainer",
+        "✓ Developing ",
       ],
     },
 
     {
-      name: "Interns Pakistan",
-      location: "Pakistan",
-      startDate: "Oct 2020",
-      endDate: "Nov 2020",
+      name: "Lead Financial Analyst (Operations Controller)",
+      location: "Portland, Oregon",
+      startDate: "Jul 2012",
+      endDate: "Sep 2020",
       description: [
-        "An Immersive Internship Program that prepares me for the world's most in-demand career. A six weeks program completely based on learning and challenges.",
-        "The internship track is built by an industry expert that let develop the skills in the areas most important ",
+        "An ",
+      ],
+    },
+
+    {
+      name: "MATLAB Developer & Economic Research Assistant",
+      location: "Eugene, Oregon",
+      startDate: "Dec 2010",
+      endDate: "Jul 2012",
+      description: [
+        "An ",
       ],
     },
   ],
 
   education: [
     {
-      name: "Pakistan Institute of Professional Science & Technology (PIPS-TECH)",
-      location: "Karāchi, Sindh, Pakistan",
-      startDate: "2019",
-      endDate: "2022",
+      name: "University of Oregon",
+      location: "Eugene, Oregon",
+      startDate: "2008",
+      endDate: "2012",
       description: [
-        "Diploma of Associate Engineering,  Computer Information Technology (CIT)",
+        "Dual Bachelor of Science in Economics & Business Administration", "Magna Cum Laude","Departmental Honors in Economics",
       ],
-    },
-    {
-      name: "Govt. Degree Boys College Buffer Zone",
-      location: "Karāchi, Sindh, Pakistan",
-      startDate: "2018",
-      endDate: "2020",
-      description: ["Intermediate, Pre-Engineering"],
-    },
-    {
-      name: "Ghazi Foundation Schools & Colleges",
-      location: "Karāchi, Sindh, Pakistan",
-      startDate: "2016",
-      endDate: "2018",
-      description: ["Matriculation,  Computer Science"],
     },
   ],
 
   socialMedia: {
-    facebook: "https://www.facebook.com/profile.php?id=100022899849583",
-    twitter: "https://twitter.com/Uzzii_21",
-    github: "https://github.com/uzzii-21",
-    email: "uzairahmed@74372gmail.com",
-    linkedin: "https://www.linkedin.com/in/uzzii21/",
+    github: "https://github.com/ogorman89",
+    email: "ianogorman@pm.me",
+    linkedin: "https://www.linkedin.com/in/iancogorman/",
   },
 
   projects: [
